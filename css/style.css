@@ -348,6 +348,7 @@ button {
   top: 0;
   z-index: 999;
   padding: 5px 0;
+  background-image: linear-gradient(to right, #927fbf, #c4bbf0);
 }
 .main-nav .menu-holder {
   display: flex;
@@ -387,6 +388,7 @@ button {
 
 @media all and (max-width: 768px) {
   .main-nav {
+    background-image: none;
     background-color: #352961;
   }
   .main-nav .menu-holder {
@@ -434,4 +436,60 @@ button {
     max-height: 100vh;
     padding-bottom: 0.5rem;
   }
+}
+.main-header {
+  position: relative;
+  height: 700px;
+  margin-top: 200px;
+}
+.main-header h1 {
+  font-size: 50px;
+}
+.main-header h1 span {
+  color: #352961;
+}
+
+.btn-secondary, .btn-primary {
+  border-radius: 30px;
+  padding: 15px 35px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #f4eeff;
+  color: #352961;
+}
+.btn-primary:hover {
+  background-color: #352961;
+  color: #f4eeff;
+  box-shadow: 2px 2px 16px 0 #f4eeff;
+}
+
+.btn-secondary {
+  background-color: #352961;
+  color: #f4eeff;
+}
+.btn-secondary:hover {
+  background-color: #f4eeff;
+  color: #352961;
+  box-shadow: 2px 2px 16px 0 #352961;
+}
+
+.circle-2, .circle-1 {
+  border-radius: 50%;
+  position: absolute;
+  z-index: -10;
+}
+
+.circle-1 {
+  background-color: none;
+  border: 1px solid #f4eeff;
+  box-shadow: 2px 2px 35px #f4eeff;
+}
+
+.circle-2 {
+  background-color: #352961;
+  box-shadow: 2px 2px 35px #352961;
 }/*# sourceMappingURL=style.css.map */

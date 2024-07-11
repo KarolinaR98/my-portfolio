@@ -4,6 +4,7 @@
     top: 0;
     z-index: 999;
     padding: 5px 0;
+    background-image: $background-color;
 
     .menu-holder {
         @include flexbox;
@@ -57,7 +58,8 @@
 @media all and (max-width: $medium) {
 
     .main-nav {
-        background-color: $secondary-color;
+        background-image: none;
+       background-color: $secondary-color; 
 
         .menu-holder {
             flex-wrap: nowrap;
