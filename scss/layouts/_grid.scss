@@ -1,0 +1,16 @@
+.row{
+    @include flexbox;
+}
+
+
+.col-50{
+    width: 50%;
+}
+
+@media all and (max-width: $small){
+
+    .col-100{
+        width: 100%;
+    }
+}
+

@@ -20,9 +20,33 @@ ul{
     padding: 0;
 }
 
+section{
+    padding: 50px 0;
+    text-align: center;
+
+    h2{
+        margin-top: 0;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    p{
+        margin: auto;
+        font-weight: 300;
+    }
+
+    @media all and (max-width: $small){
+        p{
+            width: 70%;;
+        }
+    }
+
+}
+
 .container {
     max-width: $large-container;
     margin: 0 auto;
+    
 }
 
 @media all and (max-width: $small) {

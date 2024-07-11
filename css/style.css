@@ -336,6 +336,25 @@ ul {
   padding: 0;
 }
 
+section {
+  padding: 50px 0;
+  text-align: center;
+}
+section h2 {
+  margin-top: 0;
+  font-size: 2.5rem;
+  text-align: center;
+}
+section p {
+  margin: auto;
+  font-weight: 300;
+}
+@media all and (max-width: 586px) {
+  section p {
+    width: 70%;
+  }
+}
+
 .container {
   max-width: 80%;
   margin: 0 auto;
@@ -344,6 +363,20 @@ ul {
 @media all and (max-width: 586px) {
   .container {
     max-width: 100%;
+  }
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-50 {
+  width: 50%;
+}
+
+@media all and (max-width: 586px) {
+  .col-100 {
+    width: 100%;
   }
 }
 .main-nav {
@@ -441,7 +474,7 @@ ul {
   }
 }
 .main-header {
-  max-height: 700px;
+  height: 650px;
   margin-top: 300px;
 }
 .main-header .main-header-holder h1 {
@@ -463,7 +496,7 @@ ul {
   right: 30%;
 }
 .main-header .main-header-holder .circle-2:hover {
-  transform: scale(1.2);
+  transform: scale(120%);
 }
 .main-header .main-header-holder .circle-3 {
   width: 7%;
@@ -472,7 +505,7 @@ ul {
   right: 45%;
 }
 .main-header .main-header-holder .circle-3:hover {
-  transform: scale(0.8);
+  transform: scale(80%);
 }
 @media all and (max-width: 768px) {
   .main-header .main-header-holder .circle-1,
@@ -481,13 +514,52 @@ ul {
     display: none;
   }
 }
+
 @media all and (max-width: 586px) {
+  .main-header {
+    height: 500px;
+  }
   .main-header .main-header-holder {
     margin-left: 25px;
   }
   .main-header .main-header-holder h1 {
     font-size: 42px;
   }
+  .main-header .main-header-holder button {
+    margin-top: 30px;
+  }
+}
+.about {
+  background-image: none;
+  background-color: #f4eeff;
+  color: #352961;
+}
+.about p {
+  font-size: 1.5rem;
+}
+
+.project-box {
+  padding: 0 10px;
+  margin-top: 20px;
+}
+.project-box .project-box-inner {
+  border: 1px solid #f4eeff;
+  border-radius: 10px;
+  padding: 25px;
+}
+.project-box .project-box-inner img {
+  width: 100%;
+}
+.project-box .project-box-inner .project-description {
+  padding-bottom: 20px;
+}
+.project-box .project-box-inner button {
+  margin: 10px;
+}
+
+.technologies {
+  background-color: #f4eeff;
+  color: #352961;
 }
 
 .btn-secondary, .btn-primary {
@@ -521,10 +593,10 @@ ul {
 .circle-4, .circle-3, .circle-2, .circle-1 {
   border-radius: 50%;
   position: absolute;
-  z-index: -100;
   width: auto;
   height: auto;
   transition: all 0.5s;
+  display: block;
 }
 
 .circle-1 {

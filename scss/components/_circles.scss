@@ -1,10 +1,10 @@
 %circle{
     border-radius: 50%;
     position: absolute;
-    z-index: -100;
     width: auto;
     height: auto;
     transition: all 0.5s;
+    display: block;
 }
 
 .circle-1{

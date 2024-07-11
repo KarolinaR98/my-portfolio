@@ -1,5 +1,5 @@
 .main-header {
-    max-height: 700px;
+    height: 650px;
     margin-top: 300px;
 
     .main-header-holder {
@@ -29,7 +29,7 @@
             right: 30%;
 
             &:hover{
-                transform: scale(1.2);
+                transform: scale(120%);
             }
 
         }
@@ -41,7 +41,7 @@
             right: 45%;
 
             &:hover{
-                transform: scale(0.8);
+                transform: scale(80%);
             }
 
         }
@@ -57,19 +57,25 @@
        
     }
 
-    @media all and (max-width: $small){
-        
+}
+
+@media all and (max-width: $small){
+
+    .main-header{
+        height: 500px;
+
         .main-header-holder{
             margin-left: 25px;
-
+    
             h1{
                 font-size: 42px;
             }
+    
+            button{
+                margin-top: 30px;
+            }
         }
-        
-    }
-
-
-
-
+    }    
+    
+    
 }
