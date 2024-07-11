@@ -1,18 +1,75 @@
-.main-header{
-    height: 700px;
+.main-header {
+    max-height: 700px;
     margin-top: 300px;
 
-    .main-header-holder{
+    .main-header-holder {
 
-        h1{
+        h1 {
             font-size: 50px;
-    
-            span{
+
+            span {
                 color: $secondary-color;
             }
-            
+
         }
+
+        .circle-1 {
+            width: 50%;
+            padding-bottom: 50%;
+            top: 40%;
+            right:-10%;
+
+            }
+        
+
+        .circle-2{
+            width: 5%;
+            padding-bottom: 5%;
+            top: 35%;
+            right: 30%;
+
+            &:hover{
+                transform: scale(1.2);
+            }
+
+        }
+
+        .circle-3{
+            width: 7%;
+            padding-bottom: 7%;
+            top: 80%;
+            right: 45%;
+
+            &:hover{
+                transform: scale(0.8);
+            }
+
+        }
+
+        @media all and (max-width: $medium){
+    
+            .circle-1,
+            .circle-2,
+            .circle-3{
+                display: none;
+            }
+        }        
+       
     }
 
-    
+    @media all and (max-width: $small){
+        
+        .main-header-holder{
+            margin-left: 25px;
+
+            h1{
+                font-size: 42px;
+            }
+        }
+        
+    }
+
+
+
+
 }
