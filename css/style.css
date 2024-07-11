@@ -332,6 +332,10 @@ button {
   transition: all 0.4s;
 }
 
+ul {
+  padding: 0;
+}
+
 .container {
   max-width: 80%;
   margin: 0 auto;
@@ -364,7 +368,7 @@ button {
 }
 .main-nav .menu-holder .menu .menu-item {
   display: inline-block;
-  margin: 0 12px;
+  margin-right: 20px;
 }
 .main-nav .menu-holder .menu .menu-item a {
   font-size: 1.25rem;
@@ -417,7 +421,6 @@ button {
     flex-direction: column;
     row-gap: 1.6rem;
     margin: 10px;
-    padding: 0;
   }
   .main-nav .menu-holder .menu .menu-item a:hover {
     color: #f4eeff;
@@ -438,14 +441,13 @@ button {
   }
 }
 .main-header {
-  position: relative;
   height: 700px;
-  margin-top: 200px;
+  margin-top: 300px;
 }
-.main-header h1 {
+.main-header .main-header-holder h1 {
   font-size: 50px;
 }
-.main-header h1 span {
+.main-header .main-header-holder h1 span {
   color: #352961;
 }
 
@@ -475,21 +477,4 @@ button {
   background-color: #f4eeff;
   color: #352961;
   box-shadow: 2px 2px 16px 0 #352961;
-}
-
-.circle-2, .circle-1 {
-  border-radius: 50%;
-  position: absolute;
-  z-index: -10;
-}
-
-.circle-1 {
-  background-color: none;
-  border: 1px solid #f4eeff;
-  box-shadow: 2px 2px 35px #f4eeff;
-}
-
-.circle-2 {
-  background-color: #352961;
-  box-shadow: 2px 2px 35px #352961;
 }/*# sourceMappingURL=style.css.map */

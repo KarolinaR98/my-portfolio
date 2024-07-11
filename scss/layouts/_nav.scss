@@ -5,10 +5,12 @@
     z-index: 999;
     padding: 5px 0;
     background-image: $background-color;
+    
 
     .menu-holder {
         @include flexbox;
         @include flex-align(space-between, center);
+        
 
         .menu-bar {
             display: none;
@@ -20,7 +22,7 @@
 
             .menu-item {
                 display: inline-block;
-                margin: 0 12px;
+                margin-right: 20px;
 
                 a {
                     font-size: 1.25rem;
@@ -88,7 +90,6 @@
                 flex-direction: column;
                 row-gap: 1.6rem;
                 margin: 10px;
-                padding: 0;
 
 
                 .menu-item {

@@ -1,14 +1,18 @@
 .main-header{
-    position: relative;
     height: 700px;
-    margin-top: 200px;
+    margin-top: 300px;
 
-    h1{
-        font-size: 50px;
+    .main-header-holder{
 
-        span{
-            color: $secondary-color;
+        h1{
+            font-size: 50px;
+    
+            span{
+                color: $secondary-color;
+            }
+            
         }
-        
     }
+
+    
 }
