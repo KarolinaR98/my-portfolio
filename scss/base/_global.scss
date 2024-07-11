@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: $background-color;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: $primary-font;
+    color: $primary-color;
+}
+
+a,
+button {
+    transition: all .4s;
+}
+
+.container {
+    max-width: $large-container;
+    margin: 0 auto;
+}
+
+@media all and (max-width: $small) {
+    .container {
+        max-width: $small-container;
+    }
+}

@@ -1,0 +1,128 @@
+.main-nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    padding: 5px 0;
+
+    .menu-holder {
+        @include flexbox;
+        @include flex-align(space-between, center);
+
+        .menu-bar {
+            display: none;
+        }
+
+
+        .menu {
+            list-style: none;
+
+            .menu-item {
+                display: inline-block;
+                margin: 0 12px;
+
+                a {
+                    font-size: 1.25rem;
+                    color: $primary-color;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $secondary-color;
+                    }
+                }
+            }
+
+        }
+
+        .menu-icons {
+
+            a {
+                display: inline-block;
+                color: $primary-color;
+                font-size: 1.6rem;
+                margin-right: 10px;
+
+                &:hover {
+                    color: $secondary-color;
+                }
+            }
+        }
+
+    }
+
+}
+
+@media all and (max-width: $medium) {
+
+    .main-nav {
+        background-color: $secondary-color;
+
+        .menu-holder {
+            flex-wrap: nowrap;
+
+            .menu-bar {
+                display: inline-block;
+                color: $primary-color;
+                font-size: 1.5rem;
+                border: 1px solid $primary-color;
+                padding: 0.5rem 1.5rem;
+                border-radius: 3px;
+                margin: 1rem;
+                margin-left: 2rem;
+                cursor: pointer;
+            }
+
+            .collapsible_content{
+                max-height: 0;
+                overflow: hidden;
+            }
+           
+            .menu {
+                width: 100%;
+                display: flex;
+                @include flex-align(center, center);
+                flex-direction: column;
+                row-gap: 1.6rem;
+                margin: 10px;
+                padding: 0;
+
+
+                .menu-item {
+                    a {
+                        &:hover {
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+
+            .menu-icons {
+                display: none;
+            }
+
+        }
+
+        .collapsible-expanded{
+
+            .menu-holder{
+                flex-wrap: wrap;
+
+                .menu-bar{
+                    box-shadow: 0 0 3px 2px $primary-color;
+                    border-radius: 5px;
+                }
+
+                .collapsible_content{
+                    max-height: 100vh;
+                    padding-bottom: 0.5rem;
+                }
+
+            }                    
+        }
+
+
+    }
+
+}

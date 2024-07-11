@@ -1,0 +1,15 @@
+@mixin gradient-text-color{
+    background: $gradient-color;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+@mixin flexbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin flex-align($justify, $align) {
+    justify-content: $justify;
+    align-items: $align;
+}
