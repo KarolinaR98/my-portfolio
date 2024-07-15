@@ -1,0 +1,17 @@
+.footer{
+    margin: 20px auto;
+    .links-holder{
+        text-align: center;
+
+        a{
+            display: inline-block;
+            margin: 20px;
+            font-size: 2rem;
+            color: $primary-color;
+
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+    }
+}

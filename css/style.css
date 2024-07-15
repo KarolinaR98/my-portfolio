@@ -319,6 +319,10 @@ template {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: linear-gradient(to right, #927fbf, #c4bbf0);
   background-attachment: fixed;
@@ -372,6 +376,10 @@ section p {
 
 .col-50 {
   width: 50%;
+}
+
+.col-25 {
+  width: 25%;
 }
 
 @media all and (max-width: 586px) {
@@ -559,6 +567,36 @@ section p {
 
 .technologies {
   background-color: #f4eeff;
+  color: #352961;
+}
+.technologies .row {
+  justify-content: center;
+  align-items: center;
+}
+.technologies .row .technology {
+  margin: 20px 0;
+}
+.technologies .row .technology .tech-icon {
+  font-size: 100px;
+}
+.technologies .row .technology img {
+  width: 85px;
+  height: 100px;
+}
+
+.footer {
+  margin: 20px auto;
+}
+.footer .links-holder {
+  text-align: center;
+}
+.footer .links-holder a {
+  display: inline-block;
+  margin: 20px;
+  font-size: 2rem;
+  color: #f4eeff;
+}
+.footer .links-holder a:hover {
   color: #352961;
 }
 

@@ -2,4 +2,23 @@
 
     background-color: $primary-color;
     color: $secondary-color;
+
+    .row{
+        @include flex-align(center, center);
+
+        .technology{
+            margin: 20px 0;
+            .tech-icon{
+                font-size: 100px;
+            }
+           
+            img{
+                width: 85px;
+                height: 100px;
+                
+            }
+
+            
+        }
+    }
 }
