@@ -482,7 +482,7 @@ section p {
   }
 }
 .main-header {
-  height: 650px;
+  height: 80vh;
   margin-top: 300px;
 }
 .main-header .main-header-holder h1 {
@@ -491,11 +491,7 @@ section p {
 .main-header .main-header-holder h1 span {
   color: #352961;
 }
-
 @media all and (max-width: 586px) {
-  .main-header {
-    height: 500px;
-  }
   .main-header .main-header-holder {
     margin-left: 25px;
   }
@@ -506,6 +502,7 @@ section p {
     margin-top: 30px;
   }
 }
+
 .about {
   background-image: none;
   background-color: #f4eeff;

@@ -1,5 +1,5 @@
 .main-header {
-    height: 650px;
+    height: 80vh;
     margin-top: 300px;
 
     .main-header-holder {
@@ -12,28 +12,22 @@
             }
 
         }
-       
+
     }
 
-}
+    @media all and (max-width: $small) {
 
-@media all and (max-width: $small){
-
-    .main-header{
-        height: 500px;
-
-        .main-header-holder{
+        .main-header-holder {
             margin-left: 25px;
-    
-            h1{
+
+            h1 {
                 font-size: 42px;
             }
-    
-            button{
+
+            button {
                 margin-top: 30px;
             }
         }
-    }    
-    
-    
+    }
+
 }
