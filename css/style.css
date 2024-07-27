@@ -324,7 +324,7 @@ html {
 }
 
 body {
-  background: linear-gradient(to right, #927fbf, #c4bbf0);
+  background-image: url("/img/bg-image.jpg");
   background-attachment: fixed;
   background-position: center;
   font-family: "Roboto Condensed", sans-serif;
@@ -393,7 +393,7 @@ section p {
   top: 0;
   z-index: 999;
   padding: 5px 0;
-  background-image: linear-gradient(to right, #927fbf, #c4bbf0);
+  background-color: #352961;
 }
 .main-nav .menu-holder {
   display: flex;
@@ -551,7 +551,8 @@ section p {
 }
 
 .footer {
-  margin: 20px auto;
+  margin: auto;
+  background-color: #352961;
 }
 .footer .links-holder {
   text-align: center;
