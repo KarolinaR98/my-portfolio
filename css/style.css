@@ -491,37 +491,6 @@ section p {
 .main-header .main-header-holder h1 span {
   color: #352961;
 }
-.main-header .main-header-holder .circle-1 {
-  width: 50%;
-  padding-bottom: 50%;
-  top: 40%;
-  right: -10%;
-}
-.main-header .main-header-holder .circle-2 {
-  width: 5%;
-  padding-bottom: 5%;
-  top: 35%;
-  right: 30%;
-}
-.main-header .main-header-holder .circle-2:hover {
-  transform: scale(120%);
-}
-.main-header .main-header-holder .circle-3 {
-  width: 7%;
-  padding-bottom: 7%;
-  top: 80%;
-  right: 45%;
-}
-.main-header .main-header-holder .circle-3:hover {
-  transform: scale(80%);
-}
-@media all and (max-width: 768px) {
-  .main-header .main-header-holder .circle-1,
-  .main-header .main-header-holder .circle-2,
-  .main-header .main-header-holder .circle-3 {
-    display: none;
-  }
-}
 
 @media all and (max-width: 586px) {
   .main-header {
@@ -626,35 +595,4 @@ section p {
   background-color: #f4eeff;
   color: #352961;
   box-shadow: 2px 2px 16px 0 #352961;
-}
-
-.circle-4, .circle-3, .circle-2, .circle-1 {
-  border-radius: 50%;
-  position: absolute;
-  width: auto;
-  height: auto;
-  transition: all 0.5s;
-  display: block;
-}
-
-.circle-1 {
-  border: 1px solid #f4eeff;
-  box-shadow: 2px 2px 20px #f4eeff;
-}
-
-.circle-2 {
-  background-color: #f4eeff;
-  border: 1px solid #f4eeff;
-  box-shadow: 2px 2px 20px #f4eeff;
-}
-
-.circle-3 {
-  background-color: #352961;
-  border: 1px solid #352961;
-  box-shadow: 2px 2px 20px #352961;
-}
-
-.circle-4 {
-  border: 1px solid #352961;
-  box-shadow: 2px 2px 20px #352961;
 }/*# sourceMappingURL=style.css.map */
