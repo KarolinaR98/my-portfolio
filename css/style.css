@@ -419,7 +419,7 @@ section p {
   text-decoration: none;
 }
 .main-nav .menu-holder .menu .menu-item a:hover {
-  color: #352961;
+  color: #c2a8cf;
 }
 .main-nav .menu-holder .menu-icons a {
   display: inline-block;
@@ -428,7 +428,7 @@ section p {
   margin-right: 10px;
 }
 .main-nav .menu-holder .menu-icons a:hover {
-  color: #352961;
+  color: #c2a8cf;
 }
 
 @media all and (max-width: 768px) {
@@ -517,15 +517,19 @@ section p {
   margin-top: 20px;
 }
 .project-box .project-box-inner {
+  color: #352961;
+  background-color: rgba(244, 238, 255, 0.7);
   border: 1px solid #f4eeff;
   border-radius: 10px;
   padding: 25px;
 }
 .project-box .project-box-inner img {
   width: 100%;
+  border-radius: 5px;
 }
 .project-box .project-box-inner .project-description {
   padding-bottom: 20px;
+  font-weight: 400;
 }
 .project-box .project-box-inner button {
   margin: 10px;
@@ -564,7 +568,7 @@ section p {
   color: #f4eeff;
 }
 .footer .links-holder a:hover {
-  color: #352961;
+  color: #c2a8cf;
 }
 
 .btn-secondary, .btn-primary {

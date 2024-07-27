@@ -32,7 +32,7 @@
                     text-decoration: none;
 
                     &:hover {
-                        color: $secondary-color;
+                        color: $hover-links-color;                        
                     }
                 }
             }
@@ -48,7 +48,8 @@
                 margin-right: 10px;
 
                 &:hover {
-                    color: $secondary-color;
+                   
+                    color: $hover-links-color;
                 }
             }
         }
