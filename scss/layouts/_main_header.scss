@@ -1,6 +1,7 @@
 .main-header {
     height: 80vh;
     margin-top: 300px;
+    color: $primary-color;
 
     .main-header-holder {
 
@@ -8,7 +9,7 @@
             font-size: 50px;
 
             span {
-                color: $secondary-color;
+               color: $secondary-color;
             }
 
         }

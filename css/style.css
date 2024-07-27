@@ -484,6 +484,7 @@ section p {
 .main-header {
   height: 80vh;
   margin-top: 300px;
+  color: #f4eeff;
 }
 .main-header .main-header-holder h1 {
   font-size: 50px;
@@ -559,16 +560,29 @@ section p {
   background-color: #352961;
 }
 .footer .links-holder {
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .footer .links-holder a {
   display: inline-block;
-  margin: 20px;
+  margin: 15px;
   font-size: 2rem;
+  line-height: 2rem;
   color: #f4eeff;
 }
 .footer .links-holder a:hover {
   color: #c2a8cf;
+}
+.footer .links-holder a img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.footer .links-holder a img:hover {
+  box-shadow: 0 0 10px #c2a8cf;
 }
 
 .btn-secondary, .btn-primary {
