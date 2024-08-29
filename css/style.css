@@ -600,7 +600,7 @@ section p {
 .btn-primary:hover {
   background-color: #352961;
   color: #f4eeff;
-  box-shadow: 2px 2px 16px 0 #f4eeff;
+  box-shadow: 0px 0px 20px #f4eeff;
 }
 
 .btn-secondary {
@@ -610,5 +610,5 @@ section p {
 .btn-secondary:hover {
   background-color: #f4eeff;
   color: #352961;
-  box-shadow: 2px 2px 16px 0 #352961;
+  box-shadow: 0px 0px 20px #352961;
 }/*# sourceMappingURL=style.css.map */
