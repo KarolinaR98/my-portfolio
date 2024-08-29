@@ -511,6 +511,8 @@ section p {
 }
 .about p {
   font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 30px;
 }
 
 .project-box {
