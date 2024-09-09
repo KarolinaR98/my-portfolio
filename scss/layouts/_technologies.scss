@@ -2,12 +2,20 @@
 
     background-color: $primary-color;
     color: $secondary-color;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .wrapper{
+        width: 100%;
+    }
 
     .row{
         @include flex-align(center, center);
 
         .technology{
-            margin: 20px 0;
+            margin-top: 20px;
             .tech-icon{
                 font-size: 100px;
             }
