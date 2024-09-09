@@ -581,17 +581,17 @@ section p {
 .technologies .wrapper {
   width: 100%;
 }
-.technologies .row {
+.technologies .wrapper .row {
   justify-content: center;
   align-items: center;
 }
-.technologies .row .technology {
+.technologies .wrapper .row .technology {
   margin-top: 20px;
 }
-.technologies .row .technology .tech-icon {
+.technologies .wrapper .row .technology .tech-icon {
   font-size: 100px;
 }
-.technologies .row .technology img {
+.technologies .wrapper .row .technology img {
   width: 85px;
   height: 100px;
 }
