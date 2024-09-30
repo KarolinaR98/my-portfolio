@@ -1,3 +1,5 @@
+//nav
+
 const collapsible = document.querySelector('.collapsible');
 
 collapsible.addEventListener("click", ()=>{
