@@ -7,6 +7,7 @@
     align-items: center;
     justify-content: center;
 
+    @include fade-up;
     .wrapper {
         width: 100%;
 

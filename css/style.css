@@ -344,6 +344,37 @@ section {
   padding: 60px 0;
   text-align: center;
 }
+section .reveal-up {
+  position: relative;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: opacity 1.5s ease;
+  transition: transform 1.5s ease, opacity 1.5s ease;
+}
+section .active-up {
+  transform: translateY(0px);
+  opacity: 1;
+}
+section .reveal-left {
+  position: relative;
+  transform: translateX(-100px);
+  opacity: 0;
+  transition: transform 1.5s ease, opacity 1.5s ease;
+}
+section .active-left {
+  transform: translateX(0px);
+  opacity: 1;
+}
+section .reveal-right {
+  position: relative;
+  transform: translateX(100px);
+  opacity: 0;
+  transition: transform 1.5s ease, opacity 1.5s ease;
+}
+section .active-right {
+  transform: translateX(0px);
+  opacity: 1;
+}
 section h2 {
   margin-top: 0;
   font-size: 2.5rem;
@@ -367,6 +398,44 @@ section p {
 @media all and (max-width: 586px) {
   .container {
     max-width: 100%;
+  }
+}
+.btn-secondary, .btn-primary {
+  border-radius: 30px;
+  padding: 15px 35px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #f4eeff;
+  color: #352961;
+}
+.btn-primary:hover {
+  background-color: #352961;
+  color: #f4eeff;
+  box-shadow: 0px 0px 20px #f4eeff;
+}
+
+.btn-secondary {
+  background-color: #352961;
+  color: #f4eeff;
+}
+.btn-secondary:hover {
+  background-color: #f4eeff;
+  color: #352961;
+  box-shadow: 0px 0px 20px #352961;
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
 .row {
@@ -486,6 +555,9 @@ section p {
   margin-top: 300px;
   color: #f4eeff;
 }
+.main-header .main-header-holder {
+  animation: fade-up 2s;
+}
 .main-header .main-header-holder h1 {
   font-size: 50px;
 }
@@ -552,6 +624,7 @@ section p {
   margin-top: 20px;
 }
 .project-box .project-box-inner {
+  min-height: 460px;
   color: #352961;
   background-color: rgba(244, 238, 255, 0.7);
   border: 1px solid #f4eeff;
@@ -559,7 +632,11 @@ section p {
   padding: 25px;
 }
 .project-box .project-box-inner img {
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  width: 430px;
+  height: 230px;
+  object-fit: cover;
   border-radius: 5px;
 }
 .project-box .project-box-inner .project-description {
@@ -577,6 +654,7 @@ section p {
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: fade-up 2s;
 }
 .technologies .wrapper {
   width: 100%;
@@ -624,32 +702,4 @@ section p {
 }
 .footer .links-holder a img:hover {
   box-shadow: 0 0 10px #c2a8cf;
-}
-
-.btn-secondary, .btn-primary {
-  border-radius: 30px;
-  padding: 15px 35px;
-  text-decoration: none;
-  border: none;
-  cursor: pointer;
-}
-
-.btn-primary {
-  background-color: #f4eeff;
-  color: #352961;
-}
-.btn-primary:hover {
-  background-color: #352961;
-  color: #f4eeff;
-  box-shadow: 0px 0px 20px #f4eeff;
-}
-
-.btn-secondary {
-  background-color: #352961;
-  color: #f4eeff;
-}
-.btn-secondary:hover {
-  background-color: #f4eeff;
-  color: #352961;
-  box-shadow: 0px 0px 20px #352961;
 }/*# sourceMappingURL=style.css.map */

@@ -4,6 +4,9 @@
 @import 'base/normalize';
 @import 'base/global';
 
+@import 'partials/buttons';
+@import 'partials/animations';
+
 @import 'layouts/grid';
 @import 'layouts/nav';
 @import 'layouts/main_header';
@@ -12,4 +15,4 @@
 @import 'layouts/technologies';
 @import 'layouts/footer';
 
-@import 'components/buttons';
+

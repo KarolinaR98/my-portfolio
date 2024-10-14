@@ -28,6 +28,43 @@ section{
     padding: 60px 0;
     text-align: center;   
 
+    .reveal-up{
+        position: relative;
+        transform: translateY(100px);
+        opacity: 0;
+        transition: opacity 1.5s ease;
+        transition: transform 1.5s ease, opacity 1.5s ease;
+    }
+    
+    .active-up {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    .reveal-left{
+        position: relative;
+        transform: translateX(-100px);
+        opacity: 0;
+        transition: transform 1.5s ease, opacity 1.5s ease;
+    }
+    
+    .active-left {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+
+    .reveal-right{
+        position: relative;
+        transform: translateX(100px);
+        opacity: 0;
+        transition: transform 1.5s ease, opacity 1.5s ease;
+    }
+    
+    .active-right {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+
     h2{
         margin-top: 0;
         font-size: 2.5rem;
@@ -46,6 +83,9 @@ section{
     }
 
 }
+
+
+
 
 .container {
     max-width: $large-container;

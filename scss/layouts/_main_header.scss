@@ -5,11 +5,14 @@
 
     .main-header-holder {
 
+
+        @include fade-up;
+
         h1 {
             font-size: 50px;
 
             span {
-               color: $secondary-color;
+                color: $secondary-color;
             }
 
         }
