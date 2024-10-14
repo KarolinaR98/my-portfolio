@@ -451,7 +451,7 @@ section p {
   width: 25%;
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 992px) {
   .col-100 {
     width: 100%;
   }
@@ -483,7 +483,6 @@ section p {
 .main-nav .menu-holder .menu .menu-item a {
   font-size: 1.25rem;
   color: #f4eeff;
-  font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -501,10 +500,6 @@ section p {
 }
 
 @media all and (max-width: 768px) {
-  .main-nav {
-    background-image: none;
-    background-color: #352961;
-  }
   .main-nav .menu-holder {
     flex-wrap: nowrap;
   }
@@ -551,8 +546,10 @@ section p {
   }
 }
 .main-header {
-  height: 80vh;
-  margin-top: 300px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #f4eeff;
 }
 .main-header .main-header-holder {
@@ -630,12 +627,14 @@ section p {
   border: 1px solid #f4eeff;
   border-radius: 10px;
   padding: 25px;
+  height: 100%;
 }
 .project-box .project-box-inner img {
   max-width: 100%;
   max-height: 100%;
-  width: 430px;
-  height: 230px;
+  min-width: 80%;
+  width: 500px;
+  height: auto;
   object-fit: cover;
   border-radius: 5px;
 }
@@ -651,25 +650,14 @@ section p {
   background-color: #f4eeff;
   color: #352961;
   min-height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: fade-up 2s;
 }
-.technologies .wrapper {
-  width: 100%;
-}
-.technologies .wrapper .row {
-  justify-content: center;
-  align-items: center;
-}
-.technologies .wrapper .row .technology {
+.technologies .row .technology {
   margin-top: 20px;
 }
-.technologies .wrapper .row .technology .tech-icon {
+.technologies .row .technology .tech-icon {
   font-size: 100px;
 }
-.technologies .wrapper .row .technology img {
+.technologies .row .technology img {
   width: 85px;
   height: 100px;
 }

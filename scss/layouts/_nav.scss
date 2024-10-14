@@ -5,12 +5,12 @@
     z-index: 999;
     padding: 5px 0;
     background-color: $secondary-color;
-    
+
 
     .menu-holder {
         @include flexbox;
         @include flex-align(space-between, center);
-        
+
 
         .menu-bar {
             display: none;
@@ -27,12 +27,11 @@
                 a {
                     font-size: 1.25rem;
                     color: $primary-color;
-                    font-weight: 700;
                     text-transform: uppercase;
                     text-decoration: none;
 
                     &:hover {
-                        color: $hover-links-color;                        
+                        color: $hover-links-color;
                     }
                 }
             }
@@ -48,7 +47,7 @@
                 margin-right: 10px;
 
                 &:hover {
-                   
+
                     color: $hover-links-color;
                 }
             }
@@ -61,9 +60,6 @@
 @media all and (max-width: $medium) {
 
     .main-nav {
-        background-image: none;
-       background-color: $secondary-color; 
-
         .menu-holder {
             flex-wrap: nowrap;
 
@@ -79,11 +75,11 @@
                 cursor: pointer;
             }
 
-            .collapsible_content{
+            .collapsible_content {
                 max-height: 0;
                 overflow: hidden;
             }
-           
+
             .menu {
                 width: 100%;
                 display: flex;
@@ -108,22 +104,22 @@
 
         }
 
-        .collapsible-expanded{
+        .collapsible-expanded {
 
-            .menu-holder{
+            .menu-holder {
                 flex-wrap: wrap;
 
-                .menu-bar{
+                .menu-bar {
                     box-shadow: 0 0 3px 2px $primary-color;
                     border-radius: 5px;
                 }
 
-                .collapsible_content{
+                .collapsible_content {
                     max-height: 100vh;
                     padding-bottom: 0.5rem;
                 }
 
-            }                    
+            }
         }
 
 

@@ -1,6 +1,7 @@
 .main-header {
-    height: 80vh;
-    margin-top: 300px;
+    height: 100vh;
+    display: flex;
+    @include flex-align(center, center);
     color: $primary-color;
 
     .main-header-holder {

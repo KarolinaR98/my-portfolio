@@ -1,31 +1,20 @@
 .technologies {
-
     background-color: $primary-color;
     color: $secondary-color;
     min-height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-    @include fade-up;
-    .wrapper {
-        width: 100%;
+    .row {
+        .technology {
+            margin-top: 20px;
 
-        .row {
-            @include flex-align(center, center);
+            .tech-icon {
+                font-size: 100px;
+            }
 
-            .technology {
-                margin-top: 20px;
+            img {
+                width: 85px;
+                height: 100px;
 
-                .tech-icon {
-                    font-size: 100px;
-                }
-
-                img {
-                    width: 85px;
-                    height: 100px;
-
-                }
             }
         }
     }
