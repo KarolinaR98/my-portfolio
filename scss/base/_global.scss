@@ -11,9 +11,11 @@ html{
 body {
     background-image: url(./img/bg-image.jpg);
     background-attachment: fixed;
-    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
     font-family: $primary-font;
     color: $primary-color;
+
 }
 
 a,

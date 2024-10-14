@@ -326,7 +326,8 @@ html {
 body {
   background-image: url(./img/bg-image.jpg);
   background-attachment: fixed;
-  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
   font-family: "Roboto Condensed", sans-serif;
   color: #f4eeff;
 }
@@ -563,7 +564,7 @@ section p {
 }
 @media all and (max-width: 586px) {
   .main-header .main-header-holder {
-    margin-left: 25px;
+    padding-left: 25px;
   }
   .main-header .main-header-holder h1 {
     font-size: 42px;
