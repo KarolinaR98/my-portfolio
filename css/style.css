@@ -323,10 +323,15 @@ html {
   scroll-behavior: smooth;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   background-image: url(./img/bg-image.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
+  background-size: auto;
   height: 100%;
   font-family: "Roboto Condensed", sans-serif;
   color: #f4eeff;

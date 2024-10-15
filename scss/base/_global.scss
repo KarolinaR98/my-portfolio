@@ -7,15 +7,19 @@ html{
     scroll-behavior: smooth;
 }
 
+html, body{
+    overflow-x: hidden;
+}
+
 
 body {
     background-image: url(./img/bg-image.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-size: auto;
     height: 100%;
     font-family: $primary-font;
     color: $primary-color;
-
 }
 
 a,
@@ -66,7 +70,7 @@ section{
     .active-right {
         transform: translateX(0px);
         opacity: 1;
-    }
+    } 
 
     h2{
         margin-top: 0;
